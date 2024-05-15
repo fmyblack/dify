@@ -1,0 +1,23 @@
+identity:
+  name: metaso_search
+  author: azai
+  label:
+    en_US: metaso Search
+    zh_Hans: 秘塔 搜索
+description:
+  human:
+    en_US: Perform searches on metaso and get results.
+    zh_Hans: 在 秘塔 上进行搜索并获取结果。
+  llm: Perform searches on metaso and get results.
+parameters:
+  - name: query
+    type: string
+    required: true
+    label:
+      en_US: Query string
+      zh_Hans: 查询语句
+    human_description:
+      en_US: The search query.
+      zh_Hans: 搜索查询语句。
+    llm_description: Key words for searching
+    form: llm
