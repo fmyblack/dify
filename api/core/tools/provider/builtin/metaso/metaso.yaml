@@ -1,0 +1,13 @@
+identity:
+  author: Dify
+  name: metaso
+  label:
+    en_US: metasota
+    zh_Hans: 秘塔
+    pt_BR: metasota
+  description:
+    en_US: metasota search
+    zh_Hans: 秘塔搜索
+    pt_BR: metasota search
+  icon: icon.svg
+credentials_for_provider:

@@ -14,6 +14,8 @@ COPY requirements.txt /requirements.txt
 RUN --mount=type=cache,target=/root/.cache/pip \
     pip install --prefix=/pkg -r requirements.txt
 
+RUN pip install playwright && playwright install chromium && playwright install-deps chromium
+
 # production stage
 FROM base AS production
 

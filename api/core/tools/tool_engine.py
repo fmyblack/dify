@@ -127,6 +127,7 @@ class ToolEngine:
                 tool_inputs=tool_parameters
             )
 
+            print('tool_parameters', tool_parameters)
             response = tool.invoke(user_id, tool_parameters)
 
             # hit the callback handler
