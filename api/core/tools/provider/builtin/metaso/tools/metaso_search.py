@@ -1,10 +1,10 @@
-from playwright.async_api import async_playwright
 import asyncio
+from typing import Any, Union
 
-from core.tools.tool.builtin_tool import BuiltinTool
+from playwright.async_api import async_playwright
+
 from core.tools.entities.tool_entities import ToolInvokeMessage
-
-from typing import Any, Dict, List, Union
+from core.tools.tool.builtin_tool import BuiltinTool
 
 
 async def searchMetaso(query):
@@ -39,8 +39,8 @@ async def searchMetaso(query):
 
 
 class MetasoSearchTool(BuiltinTool):
-    def _invoke(self, user_id: str, tool_parameters: Dict[str, Any],
-        ) -> Union[ToolInvokeMessage, List[ToolInvokeMessage]]:
+    def _invoke(self, user_id: str, tool_parameters: dict[str, Any],
+        ) -> Union[ToolInvokeMessage, list[ToolInvokeMessage]]:
         """
             invoke tools
         """
