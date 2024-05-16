@@ -22,7 +22,7 @@ async def searchMetaso(query):
         # 启动 Chromium 浏览器
         # browser = await p.chromium.launch(headless=False)  # headless=False 用于打开浏览器界面
         browser = await p.chromium.launch(
-            executable_path="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",  # 替换为你的 Chrome 可执行文件路径
+            # executable_path="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",  # 替换为你的 Chrome 可执行文件路径
             headless=True,  # 使用非无头模式，以便看到浏览器界面
         )
         page = await browser.new_page()
