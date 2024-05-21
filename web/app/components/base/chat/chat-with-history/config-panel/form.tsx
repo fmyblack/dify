@@ -48,6 +48,11 @@ const Form = () => {
         />
       )
     }
+    if (form.type === 'file') {
+      return (
+        <input type="file" id="fileInput" name="file"/>
+      )
+    }
 
     return (
       <PortalSelect
