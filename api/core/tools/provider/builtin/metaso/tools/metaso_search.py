@@ -32,7 +32,7 @@ async def searchMetaso(query):
         await page.click('circle[fill="#47B881"]')
         await page.fill('input[placeholder="输入邮箱/手机号"]', '13051597970')
         await asyncio.sleep(random.randint(0, 1000) / 1000)
-        await page.fill('input[placeholder="输入登录密码"]', 'cjwmetaso6M!!')
+        await page.fill('input[placeholder="输入登录密码"]', 'metaso123456!!')
         await asyncio.sleep(random.randint(0, 1000) / 1000)
         await page.click('input[id="desktop-login-policy"]')
         await asyncio.sleep(random.randint(0, 1000) / 1000)
